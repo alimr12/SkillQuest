@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillQuest - JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SkillQuest</h1>
+        <button id="darkModeBtn">Dark Mode</button>
+    </header>
+
+    <main>
+
+        <section id="loginSection">
+            <h2>Welcome to SkillQuest</h2>
+            <p>Learn JavaScript and test your skills!</p>
+
+            <form id="signupForm">
+                <h3>Create Account</h3>
+                <input type="text" id="signupName" placeholder="Enter your name" required>
+                <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                <input type="password" id="signupPassword" placeholder="Enter password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <form id="loginForm">
+                <h3>Login</h3>
+                <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                <input type="password" id="loginPassword" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="dashboardSection" style="display: none;">
+            <h2 id="welcomeText">Welcome</h2>
+            <p>Ready to test your JavaScript knowledge?</p>
+
+            <div class="dashboard">
+                <div class="box">
+                    <h3>Best Score</h3>
+                    <p id="bestScore">0</p>
+                </div>
+
+                <div class="box">
+                    <h3>Quizzes Played</h3>
+                    <p id="quizCount">0</p>
+                </div>
+            </div>
+
+            <button id="startQuizBtn">Start Quiz</button>
+            <button id="logoutBtn">Logout</button>
+        </section>
+
+        <section id="quizSection" style="display: none;">
+            <h2>JavaScript Quiz</h2>
+            <p id="questionNumber">Question 1</p>
+            <p id="timer">Time: 30 seconds</p>
+
+            <h3 id="questionText">Question will appear here</h3>
+
+            <div id="answerOptions"></div>
+
+            <p id="quizScore">Score: 0</p>
+            <button id="nextQuestionBtn">Next Question</button>
+        </section>
+
+        <section id="resultSection" style="display: none;">
+            <h2>Quiz Completed!</h2>
+            <p id="finalScore">Your score: 0</p>
+            <p id="resultMessage"></p>
+
+            <button id="playAgainBtn">Play Again</button>
+            <button id="homeBtn">Dashboard</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>SkillQuest | JavaScript Learning Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
