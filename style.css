@@ -1,0 +1,198 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#darkModeBtn {
+    background-color: white;
+    color: #2563eb;
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+    color: #1e40af;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.box {
+    background-color: #eff6ff;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.box p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+#answerOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+#answerOptions button {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    text-align: left;
+    width: 100%;
+}
+
+#answerOptions button:hover {
+    background-color: #bfdbfe;
+}
+
+#timer {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark section {
+    background-color: #1e293b;
+}
+
+body.dark h2 {
+    color: #93c5fd;
+}
+
+body.dark .box {
+    background-color: #334155;
+}
+
+body.dark input {
+    background-color: #334155;
+    color: white;
+    border-color: #475569;
+}
+
+body.dark #answerOptions button {
+    background-color: #334155;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+    }
+}
